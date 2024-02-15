@@ -6,7 +6,8 @@
     "scripts": {
         "dev": "vite dev",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "format": "prettier --write ."
     },
     "dependencies": {
         "better-sqlite3": "^9.4.1",
@@ -17,6 +18,9 @@
         "@sveltejs/kit": "^2.0.0",
         "@sveltejs/vite-plugin-svelte": "^3.0.0",
         "@types/better-sqlite3": "^7.6.9",
+        "prettier": "^3.2.5",
+        "prettier-plugin-svelte": "^3.2.1",
+        "prettier-plugin-tailwindcss": "^0.5.11",
         "svelte": "^4.2.7",
         "tslib": "^2.4.1",
         "typescript": "^5.0.0",
