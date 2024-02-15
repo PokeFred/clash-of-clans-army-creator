@@ -1,8 +1,18 @@
+import { skeleton } from '@skeletonlabs/tw-plugin'
+import { join as joinPath } from 'path'
+
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ['./src/app.html', './src/routes/**/*.svelte', './src/lib/components/**/*.svelte'],
+    darkMode: 'class',
+    content: ['./src/app.html', './src/routes/**/*.svelte', './src/lib/components/**/*.svelte', joinPath(require.resolve('@skeletonlabs/tw-plugin'), '../**/*.{html,svelte,js,ts}')],
     theme: {
         extend: {},
     },
-    plugins: [],
+    plugins: [
+        skeleton({
+            themes: {
+                preset: ['skeleton'],
+            },
+        }),
+    ],
 }
