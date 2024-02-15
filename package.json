@@ -8,10 +8,15 @@
         "build": "vite build",
         "preview": "vite preview"
     },
+    "dependencies": {
+        "better-sqlite3": "^9.4.1",
+        "dotenv": "^16.4.4"
+    },
     "devDependencies": {
         "@sveltejs/adapter-vercel": "^5.1.0",
         "@sveltejs/kit": "^2.0.0",
         "@sveltejs/vite-plugin-svelte": "^3.0.0",
+        "@types/better-sqlite3": "^7.6.9",
         "svelte": "^4.2.7",
         "tslib": "^2.4.1",
         "typescript": "^5.0.0",
