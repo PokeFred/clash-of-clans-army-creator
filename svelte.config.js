@@ -1,5 +1,5 @@
-import adapter from "@sveltejs/adapter-vercel"
-import { vitePreprocess } from "@sveltejs/vite-plugin-svelte"
+import adapter from '@sveltejs/adapter-vercel'
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -7,13 +7,13 @@ const config = {
     kit: {
         adapter: adapter(),
         alias: {
-            $server: "./src/lib/server",
-            $components: "./src/lib/components",
-            $utils: "./src/lib/utils",
-            $stores: "./src/lib/stores",
-            $types: "./src/lib/types",
-        }
-    }
+            $server: './src/lib/server',
+            $components: './src/lib/components',
+            $utils: './src/lib/utils',
+            $stores: './src/lib/stores',
+            $types: './src/lib/types',
+        },
+    },
 }
 
 export default config
